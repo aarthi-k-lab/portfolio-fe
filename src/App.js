@@ -1,4 +1,6 @@
 import "./App.css";
+import Tooltip from "react-tooltip-lite";
+
 import Mypic from "./images/my_pic.jpg";
 import Projects from "./project.js";
 import Experience from "./experience.js";
@@ -8,6 +10,9 @@ import Friends from "./images/friends.png";
 import Films from "./images/films.png";
 import Dance from "./images/dance.png";
 import Renovation from "./images/renovation.png";
+import Instagram from "./images/instagram.png";
+import Github from "./images/github.png";
+import LinkedIn from "./images/linkedin.png";
 
 import React, { Component } from "react";
 class App extends Component {
@@ -45,10 +50,10 @@ class App extends Component {
     return (
       <div className="app container">
         <div className="row navbarrow">
-          <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-4 col-xxl-6">
+          <div className="col-12 col-sm-12 col-md-12 col-lg-2 col-xl-4 col-xxl-4">
             <h1>Aarthi</h1>
           </div>
-          <div className="col-24 col-sm-24 col-md-12 col-lg-10 col-xl-8 col-xxl-6">
+          <div className="col-24 col-sm-24 col-md-12 col-lg-10 col-xl-8 col-xxl-8">
             <nav className="navcontent row">
               <a
                 className="col-3 col-lg-1 navlink "
@@ -681,6 +686,7 @@ class App extends Component {
             );
           })}
         </div>
+
         <div className="row interest" id="interest">
           <div className="col-12">
             <h1 style={{ color: "white", fontFamily: "Poiret One, cursive" }}>
@@ -699,12 +705,11 @@ class App extends Component {
               />
             </span>
           </div>
-          <div className="col-6 col-sm-4 hobby1">
+          <div className="col-6 col-sm-4 hobby">
             <img
               className="col-12"
               src={Badminton}
               alt="badmintohobby"
-              height="100px"
               style={{ borderRadius: "50%" }}
             />
             <div className="col-12">
@@ -712,12 +717,11 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="col-6 col-sm-4 hobby2">
+          <div className="col-6 col-sm-4  hobby">
             <img
               className="col-12"
               src={Gym}
               alt="gym"
-              height="100px"
               style={{ borderRadius: "50%" }}
             />
             <div className="col-12">
@@ -725,12 +729,11 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="col-6 col-sm-4 hobby3">
+          <div className="col-6 col-sm-4 hobby">
             <img
               className="col-12"
               src={Friends}
               alt="friends"
-              height="100px"
               style={{ borderRadius: "50%" }}
             />
             <div className="col-12">
@@ -738,12 +741,11 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="col-6 col-sm-4 hobby4">
+          <div className="col-6 col-sm-4 hobby">
             <img
               className="col-12"
               src={Films}
               alt="films"
-              height="100px"
               style={{ borderRadius: "50%" }}
             />
             <div className="col-12">
@@ -753,12 +755,11 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="col-6 col-sm-4 hobby5">
+          <div className="col-6 col-sm-4  hobby">
             <img
               className="col-12"
               src={Dance}
               alt="dance"
-              height="100px"
               style={{ borderRadius: "50%" }}
             />
             <div className="col-12">
@@ -766,18 +767,119 @@ class App extends Component {
             </div>
           </div>
 
-          <div className="col-6 col-sm-4 hobby6">
+          <div className="col-6 col-sm-4 col-lg-2 hobby">
             <img
               className="col-12"
               src={Renovation}
               alt="renovation"
-              height="100px"
               style={{ borderRadius: "50%" }}
             />
             <div className="col-12">
               <h4 className="hobbyheading">Renovating</h4>
             </div>
           </div>
+        </div>
+        <div className="row contact" id="contact">
+          <footer className="footerClass col-12">
+            <div className="row">
+              <div className="col-2">
+                <a
+                  href="https://github.com/aarthi-k-lab/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="visit GitHub Profile"
+                >
+                  <img src={Github} alt="github" height="50px" />
+                </a>
+              </div>
+              <div className="col-2">
+                <a
+                  href="https://www.linkedin.com/in/aarthi-k-244aa9164/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="visit Linkedin Profile"
+                >
+                  <img src={LinkedIn} alt="linkedin" height="50px" />
+                </a>
+              </div>
+              <div className="col-2">
+                <a
+                  href="mailto:aarthikannan2103@gmail.com"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="Mail me"
+                >
+                  <img
+                    src="https://img.icons8.com/ios-filled/50/000000/mail.png"
+                    height="50px"
+                    alt="mail"
+                  />
+                </a>
+              </div>
+              <div className="col-2">
+                <a
+                  href="https://www.instagram.com/a.a.r.t.h.i_/"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="visit Instagram Profile"
+                >
+                  <img src={Instagram} alt="instagram" height="50px" />
+                </a>
+              </div>
+              <div className="col-2" style={{ cursor: "pointer" }}>
+                <Tooltip
+                  content="To connect Further: 9578088335"
+                  direction="top"
+                  background="#ee5143"
+                  color="white"
+                >
+                  <img
+                    src="https://img.icons8.com/metro/26/000000/android.png"
+                    alt="phone"
+                    height="50px"
+                  />
+                </Tooltip>
+              </div>
+              <div className="col-2">
+                <a
+                  href="https://www.google.com/maps/@9.9095038,78.1013999,19.3z"
+                  target="_blank"
+                  rel="noreferrer"
+                  data-bs-toggle="tooltip"
+                  data-bs-placement="top"
+                  title="view my location in maps"
+                >
+                  <img
+                    src="https://img.icons8.com/metro/26/000000/marker.png"
+                    alt="map"
+                    height="50px"
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="row">
+              <span
+                className="scrollUp"
+                onClick={() =>
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
+                }
+              >
+                <img
+                  alt="arrow up"
+                  style={{ float: "right" }}
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfiBRsEAQ4hCvtdAAAA2UlEQVRIx6XTMQ5EUBCA4b8RtNtvr3EJB9EpuJgDkKyjOIBE4goSbwtZi5j33jDdFN/fTAbsk5HxYEoWFson3GDuJn78ZmLPbyTOXJnY845OmzjyiEiXOHNAk7jiioTEPRM27pGQeEzsk5B4yshI6krIfMJgmOyJwsHtiQKGbf0QXnJbYoBq45HI5UQFUDHTCnxkFBIt88oBXruLHHlCIiSOSuSAJeHFFQmJeyZs3CPh4o6ED7ckfLmQ0PDLRK/i50QPtZIfEzWENEr+TzTr/wbkvFUc4E1OAF9G12oNYFAoGwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNS0yN1QwNDowMToxNCswMjowMGnicWkAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDUtMjdUMDQ6MDE6MTQrMDI6MDAYv8nVAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAABJRU5ErkJggg=="
+                />
+              </span>
+            </div>
+          </footer>
         </div>
       </div>
     );

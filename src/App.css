@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
   color: #777777;
   font-family: "Roboto", sans-serif;
@@ -211,11 +215,24 @@
   background-color: #ee5143;
   border-radius: 20px;
   margin: 15px;
+  justify-content: center;
 }
 
 .hobbyheading {
   font-family: Poiret One, cursive;
   color: white;
+}
+
+.footerClass {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobby img {
+  height: 100px;
+  width: 100px;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
