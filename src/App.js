@@ -10,7 +10,6 @@ import Friends from "./images/friends.png";
 import Films from "./images/films.png";
 import Dance from "./images/dance.png";
 import Renovation from "./images/renovation.png";
-import Instagram from "./images/instagram.png";
 import Github from "./images/github.png";
 import LinkedIn from "./images/linkedin.png";
 
@@ -822,18 +821,6 @@ class App extends Component {
                   />
                 </a>
               </div>
-              {/* <div className="col-2">
-                <a
-                  href="https://www.instagram.com/a.a.r.t.h.i_/"
-                  target="_blank"
-                  rel="noreferrer"
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  title="visit Instagram Profile"
-                >
-                  <img src={Instagram} alt="instagram" height="50px" />
-                </a>
-              </div> */}
               <div className="col-2" style={{ cursor: "pointer" }}>
                 <Tooltip
                   content="To connect Further: 9578088335"
