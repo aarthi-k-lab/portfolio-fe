@@ -20,7 +20,7 @@ const Experience = [
     duration: "Jul 2019 - Nov 2020",
     description: [
       "Analyzed business requirement in order to determine the test strategy covered by automation testing.",
-      "Trained the new colleagues on selenim automation.",
+      "Trained the new colleagues on selenium automation.",
       "Implemented Jenkins for Continuous Integration.",
       "Maintained and executed existing tests scripts/regression suites.",
     ],
@@ -36,7 +36,7 @@ const Experience = [
     description: [
       "Developed new test scripts and test cases using selenium web driver.",
       "Involved in reviewing the test Reports and preparing test summary reports.",
-      "Implemented Jenkins for Continuous Integration.",
+      "Attending Agile meetings (Daily scrum meeting/Sprint planning) on assigned projects",
       "Maintained and executed existing tests scripts/regression suites.",
     ],
     id: "experience3",
