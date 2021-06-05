@@ -1,38 +1,395 @@
-.App {
+.app {
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  line-height: 26px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbarrow {
+  background: #e73827;
+  color: white;
+  font-family: Poiret One, cursive;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navlink {
+  color: white;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navlink:hover {
+  color: white;
+  font-size: larger;
+}
+
+.navlink:active {
+  color: white;
+  font-size: x-large;
+}
+
+.navcontent {
+  height: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.homePage {
+  height: 100vh;
+  margin: 30px;
+}
+
+.mypic {
+  align-self: center;
+}
+
+.homeintro {
+  align-self: center;
+}
+
+.name {
+  margin-top: 0px;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+  line-height: 54px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.banner {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.1px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.adjective {
+  color: #e73827;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.aarthiportfolio {
+  height: 450px;
+}
+.aboutskillPage {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.aboutMe {
+  text-align: left;
+}
+
+.skills {
+  box-shadow: 0px 8px 30px 0px rgb(153 153 153 / 10%);
+}
+
+.skillItem {
+  margin-bottom: 10px;
+}
+
+.skillItem h4 {
+  text-align: right;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 15px;
+}
+
+.score {
+  height: 5px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #eeeeee;
+  padding-left: 5px;
+  padding-right: 5px;
+  box-shadow: 0px 20px 20px 0px rgb(132 144 255 / 20%);
+}
+
+.scorebar {
+  transition: width 0.6s ease;
+  height: 5px;
+  border-radius: 5px;
+  vertical-align: middle;
+  align-self: center;
+  background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  background-image: -webkit-linear-gradient(0deg, #ee5143 0%, #e73827 100%);
+}
+
+.navbarrow {
+  position: sticky;
+  top: 0;
+}
+
+.scrollUp {
+  display: none;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+}
+
+.projectCard {
+  border: 1px solid gray;
+  margin-bottom: 20px;
+}
+
+#projectSelected {
+  font-size: x-large;
+  color: #e73827;
+  background-color: white;
+}
+
+.projectheader {
+  cursor: pointer;
+
+  padding-bottom: 20px;
+}
+
+.projectheader:hover {
+  font-size: x-large;
+  color: black;
+}
+
+.projectCard {
+  height: 550px;
+}
+
+.title {
+  height: 65px;
+}
+
+.description {
+  height: 170px;
+}
+
+.cardImg {
+  height: 200px;
+}
+
+.butnHolder {
+  display: flex;
+  justify-content: space-around;
+}
+
+.experienceRoadmap:before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  height: 55%;
+  width: 4px;
+  left: 49%;
+  background: black;
+  margin-left: 1px;
+  z-index: -1;
+}
+
+.experienceCard {
+  font-family: Poiret One, cursive;
+  height: 100%;
+  border: 1px solid black;
+  text-align: left;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.experiencedescription {
+  display: none;
+}
+
+.interest {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #ee5143;
+  border-radius: 20px;
+  margin: 15px;
+}
+
+.hobbyheading {
+  font-family: Poiret One, cursive;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+@media (min-width: 992px) and (max-width: 1200px) {
+  .aarthiportfolio {
+    height: 400px;
+  }
+
+  .experienceRoadmap:before {
+    height: 65%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 768px) and (max-width: 992px) {
+  .aarthiportfolio {
+    height: 330px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .projectCard {
+    height: 610px;
+  }
+
+  .description {
+    height: 250px;
+  }
+
+  .experienceRoadmap:before {
+    height: 83%;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .homePage {
+    display: flex;
+  }
+
+  .aarthiportfolio {
+    height: 320px;
+  }
+
+  .mypic {
+    order: 1;
+  }
+
+  .navbarrow {
+    position: relative;
+  }
+
+  .aboutContent,
+  .aboutHeader {
+    text-align: center;
+  }
+
+  .scrollUp {
+    display: inline;
+  }
+
+  .aboutskillPage {
+    height: 115vh;
+  }
+
+  .projectCard {
+    height: 590px;
+  }
+
+  .description {
+    height: 220px;
+  }
+
+  .experienceRoadmap:before {
+    height: 100%;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 575px) {
+  .aarthiportfolio {
+    height: 280px;
+  }
+
+  .mypic {
+    order: 1;
+  }
+
+  .navbarrow {
+    position: relative;
+  }
+
+  .aboutContent,
+  .aboutHeader {
+    text-align: center;
+  }
+
+  .scrollUp {
+    display: inline;
+  }
+
+  .aboutskillPage {
+    height: 125vh;
+  }
+
+  .projectCard {
+    height: 590px;
+  }
+
+  .description {
+    height: 210px;
+  }
+
+  .experienceRoadmap {
+    display: flex;
+  }
+
+  .experienceImage {
+    order: -1;
+  }
+
+  .experienceRoadmap:before {
+    left: 8%;
+  }
+
+  .experienceRoadmap:before {
+    height: 100%;
+  }
+
+  .navcontent a {
+    font-size: small;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 330px) {
+  .homePage {
+    display: flex;
+  }
+  /* .aarthiportfolio {
+    height: 280px;
+  } */
+
+  .mypic {
+    display: none;
+  }
+
+  .navbarrow {
+    position: relative;
+  }
+
+  .aboutContent,
+  .aboutHeader {
+    text-align: center;
+  }
+
+  .scrollUp {
+    display: inline;
+  }
+
+  .aboutskillPage {
+    height: 130vh;
+  }
+
+  .experienceRoadmap {
+    display: flex;
+  }
+
+  .experienceImage {
+    order: -1;
+  }
+
+  .experienceRoadmap:before {
+    left: 8%;
+  }
+
+  .experienceRoadmap:before {
+    height: 100%;
+  }
+
+  .navcontent a {
+    font-size: smaller;
   }
 }
