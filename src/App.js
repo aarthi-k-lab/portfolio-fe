@@ -822,7 +822,7 @@ class App extends Component {
                   />
                 </a>
               </div>
-              <div className="col-2">
+              {/* <div className="col-2">
                 <a
                   href="https://www.instagram.com/a.a.r.t.h.i_/"
                   target="_blank"
@@ -833,7 +833,7 @@ class App extends Component {
                 >
                   <img src={Instagram} alt="instagram" height="50px" />
                 </a>
-              </div>
+              </div> */}
               <div className="col-2" style={{ cursor: "pointer" }}>
                 <Tooltip
                   content="To connect Further: 9578088335"
