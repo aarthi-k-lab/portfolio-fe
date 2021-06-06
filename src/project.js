@@ -14,7 +14,7 @@ const Project = [
   {
     name: "Pizza Delivery Application",
     description:
-      "Pizzeria is a Pizza delivery website which allows users to order the pizza and also customiz pizza on their own.",
+      "Pizzeria is a Pizza delivery website which allows users to order the pizza and also customize pizza on their own. Admin can change the order status to delivered, sent out to deliver, cooking, order recieved. Admin credentials: aarthikannan2103@gmail.com, Chandler#123",
     imgUSrc: PizzaDelivery,
     pageUrl: "https://pizzeria-ak.netlify.app/",
     gitUrl: "https://github.com/aarthi-k-lab/client",
@@ -24,7 +24,7 @@ const Project = [
     name: "Book My Show Application",
     imgUSrc: BookMyShow,
     description:
-      "BookMyShow Application let users to book cinema in theatres of Madurai, India. After booking, tickets are sent in the mail to user.",
+      "BookMyShow Application let users to book cinema in theatres of Madurai, India. After booking, tickets are sent in the mail to user. Admin can add new theatres, movies, showtimes and also can can the movie tickets booked by users. Admin credentials: aarthikannan2103@gmail.com, Chandler#123",
     pageUrl: "https://romantic-feynman-b0d70f.netlify.app",
     gitUrl: "https://github.com/aarthi-k-lab/Hackathon_Client",
     projectType: "fullstack",
@@ -52,7 +52,7 @@ const Project = [
     name: "Tic Tac Toe",
     imgUSrc: TicTacToe,
     description:
-      "Tic Tac Toe is the gaming website which allows single player or multi player. Speciality in this application is that user can also select the level of the game.",
+      "Tic Tac Toe is the gaming website which allows single player or multi player. Specialty in this application is that user can also select the level of the game.",
     pageUrl: "https://ak-tictactoe.netlify.app",
     gitUrl: "https://github.com/aarthi-k-lab/guvi/tree/master/tic-tac-toe",
     projectType: "js",
@@ -90,7 +90,7 @@ const Project = [
     name: "Recipe Check",
     imgUSrc: Recipe,
     description:
-      "Recipe check is an web application which contains the recipe of a food item and user can like, change font size and also check the ingredients if brrought already.",
+      "Recipe check is an web application which contains the recipe of a food item and user can like, change font size and also check the ingredients if brought already.",
     pageUrl: "https://hf3oo.csb.app/",
     gitUrl: "https://codesandbox.io/s/hf3oo",
     projectType: "reactfrontend",

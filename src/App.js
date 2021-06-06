@@ -13,6 +13,8 @@ import Renovation from "./images/renovation.png";
 import Github from "./images/github.png";
 import LinkedIn from "./images/linkedin.png";
 
+import Resume from "./Aarthi's_FullStack_Resume.pdf";
+
 import React, { Component } from "react";
 class App extends Component {
   state = {
@@ -171,7 +173,8 @@ class App extends Component {
               </a>
               <a
                 className="col-3 col-lg-1 navlink"
-                href="#resume"
+                href={Resume}
+                target="_target"
                 id={this.state.interestflag === true ? "selectedTab" : ""}
                 onClick={() =>
                   this.setState({
@@ -499,7 +502,7 @@ class App extends Component {
                 )
                   return (
                     <div
-                      className="col-12 col-sm-6 col-md-4"
+                      className="col-12 col-sm-6 col-md-6 col-lg-4"
                       key={project.name + index}
                     >
                       <div className="projectCard">
