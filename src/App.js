@@ -688,7 +688,6 @@ class App extends Component {
             );
           })}
         </div>
-
         <div className="row interest" id="interest">
           <div className="col-12">
             <h1 style={{ color: "white", fontFamily: "Poiret One, cursive" }}>
